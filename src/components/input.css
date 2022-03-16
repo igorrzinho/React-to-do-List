@@ -1,0 +1,55 @@
+:root {
+    --black:#070707;
+    --gray-ligth:#afafaf;
+    --dark-gray:#24272b;
+    --dark-blue:#004ba8;
+    --blue:#3e78b2;
+}
+
+.input-box {
+    background: var(--dark-gray);
+    width: 350px;
+    height: 30px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border-left: 2px solid var(--blue);
+    border-right: 2px solid var(--blue);
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 1rem;
+    width: 200px;
+    border-bottom: 2px solid var(--dark-blue);
+    border-radius: 10px;
+    color: var(--gray-ligth);
+}
+
+input::-webkit-input-placeholder{
+    color: var(--gray-ligth);
+    font-size: 0.8rem;
+}
+
+input:focus{
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid var(--blue);
+
+}
+
+.btn-input > button{
+    background: var(--gray-ligth);
+    border: 2px solid var(--blue);
+    color: var(--black);
+    font-size: 1rem;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+}

@@ -1,12 +1,14 @@
 import React from 'react';
+import './task.css';
+
 const Task=({task, handleTaskClick, handleTaskDeletion })=>{
     return(
-        <div className='class' style={task.completed ? {borderLeft: "6px solid chartreuse"}:{} }>
-            <div onClick={()=> handleTaskClick(task.id)}>
+        <div className='task-box' style={task.completed ? {borderLeft: "6px solid #004ba8"}:{} }>
+            <div className='task-txt' onClick={()=> handleTaskClick(task.id)}>
                 {task.title}                
             </div>
             <div>
-                <button onClick={()=>handleTaskDeletion(task.id)}>
+                <button className='btn' onClick={()=>handleTaskDeletion(task.id)}>
                     &times;
                 </button>
             </div>

@@ -1,0 +1,44 @@
+:root {
+    --black:#070707;
+    --gray-ligth:#afafaf;
+    --dark-gray:#24272b;
+    --dark-blue:#004ba8;
+    --blue:#3e78b2;
+}
+
+.task-box {
+    width:300px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid var(--blue);
+    border-radius: 0 10px 10px 0;
+    background: var(--dark-gray) ;
+    color:var(--gray-ligth);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-txt {
+    font-size: 1.3rem;
+    width: 100%;
+    color: var(--gray-ligth);
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btn {
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    border: 2px solid var(--blue);
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--blue);
+}

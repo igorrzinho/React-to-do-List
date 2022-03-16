@@ -1,0 +1,17 @@
+:root {
+    --black: #070707;
+    --gray-ligth: #afafaf;
+    --dark-gray: #24272b;
+    --dark-blue: #004ba8;
+    --blue: #3e78b2;
+}
+
+.tasks-container {
+    width: 350px;
+    background: var(--dark-gray);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    border-left: 2px solid var(--dark-blue);
+    border-right: 2px solid var(--dark-blue);
+}

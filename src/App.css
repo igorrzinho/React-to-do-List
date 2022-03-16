@@ -1,7 +1,11 @@
-.App {
-  text-align: center;
+:root {
+    --black:#07070a;
+    --gray-ligth:#4a525a;
+    --dark-gray:#24272b;
+    --dark-blue:#004ba8;
+    --blue:#3e78b2;
 }
 
-.class {
-  cursor: pointer;
+body {
+  background: var(--black);
 }

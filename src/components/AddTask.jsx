@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./input.css"
 
 import Btn from './btn';
 const AddTask = ({handleTaskAddition}) => {
@@ -13,12 +14,13 @@ const AddTask = ({handleTaskAddition}) => {
     }
 
     return ( 
-        <div>
+        <div className='input-box'>
             <input 
+            placeholder='digite aqui'
             onChange={handleInputChange}
             value={inputData}
             type="text" />
-            <div>
+            <div className='btn-input'>
 
                 <Btn OnClick={handleAddTaskClick}>
                     enviar

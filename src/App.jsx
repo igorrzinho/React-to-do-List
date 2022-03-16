@@ -38,9 +38,7 @@ function App() {
     const handleTaskClick = (taskId) => {
       const newTasks = tasks.map((task)=>{
         if (task.id === taskId)return{...task, completed: !task.completed}
-
         return task;
-
       })
 
       setTasks(newTasks);
@@ -51,6 +49,7 @@ function App() {
 
     setTasks(newTasks)
   }
+
 
   return (
     <div className="App">
