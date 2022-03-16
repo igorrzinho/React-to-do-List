@@ -1,23 +1,22 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import './App.css';
 import Header from './components/header';
 import Tasks from './components/tasks';
 import AddTask from './components/AddTask';
 
+const getLocalItems = () =>{
+  let list = localStorage.getItem('list')
+
+  if(list){
+    return JSON.parse(localStorage.getItem('list'))
+  }else{
+    return []
+  }
+}
+
 function App() {
 
-  const [tasks,setTasks]=useState([
-    {
-      id: "1",
-      title: "ler livro",
-      completed:true
-    },
-    {
-      id: "2",
-      title: "ler livro2",
-      completed:false
-    }
-  ]);
+  const [tasks,setTasks]=useState(getLocalItems());
 
   const handleTaskAddition = (taskTitle) =>{
     if(taskTitle!="" && taskTitle!=" "){
@@ -50,7 +49,9 @@ function App() {
     setTasks(newTasks)
   }
 
-
+  useEffect(()=>{
+    localStorage.setItem('list', JSON.stringify(tasks))
+  },[tasks])
   return (
     <div className="App">
       <Header/>
