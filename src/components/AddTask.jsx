@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./input.css"
+import "./AddTask.css"
 
 import Btn from './btn';
 const AddTask = ({handleTaskAddition}) => {
@@ -15,17 +15,21 @@ const AddTask = ({handleTaskAddition}) => {
 
     return ( 
         <div className='input-box'>
+            <h1>To Do List</h1>
+           <br/>
+           <div className='form'>
             <input 
             placeholder='digite aqui'
             onChange={handleInputChange}
             value={inputData}
             type="text" />
-            <div className='btn-input'>
+                <div className='btn-input'>
 
-                <Btn OnClick={handleAddTaskClick}>
-                    enviar
-                </Btn>
-            </div>
+                    <Btn OnClick={handleAddTaskClick}>
+                        add
+                    </Btn>
+                </div>
+            </div>   
         </div>
      );
 }

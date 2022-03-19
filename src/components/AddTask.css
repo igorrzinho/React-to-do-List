@@ -1,0 +1,45 @@
+.input-box {
+    background: #021526;
+    width: 400px;
+    height: 130px;
+    margin: 20px 0;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #022340;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form input{
+    width: 190px;
+    height: 30px;
+    padding: 5px;
+    background: #021526;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+::-webkit-input-placeholder{
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.btn-input button{
+    width: 100px;
+    height: 40px;
+    font-size: 1.5rem;
+    background: #03588C;
+    color: #021526;
+    border: none;
+    border-radius: 10px;
+}

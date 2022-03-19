@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react';
 import './App.css';
-import Header from './components/header';
 import Tasks from './components/tasks';
 import AddTask from './components/AddTask';
 
@@ -10,7 +9,18 @@ const getLocalItems = () =>{
   if(list){
     return JSON.parse(localStorage.getItem('list'))
   }else{
-    return []
+    return [
+      {
+        "title":"completa",
+        "id":1,
+        "completed":true
+      },
+      {
+        "title":"não completa",
+        "id":2,
+        "completed":false
+      },
+    ]
   }
 }
 
@@ -54,7 +64,6 @@ function App() {
   },[tasks])
   return (
     <div className="App">
-      <Header/>
       <AddTask handleTaskAddition={handleTaskAddition}/>
       <Tasks 
       handleTaskClick={handleTaskClick}

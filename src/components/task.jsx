@@ -3,7 +3,7 @@ import './task.css';
 
 const Task=({task, handleTaskClick, handleTaskDeletion })=>{
     return(
-        <div className='task-box' style={task.completed ? {borderLeft: "6px solid #004ba8"}:{} }>
+        <div className='task-box' style={task.completed ? {border: "4px solid #0075BD"}:{} }>
             <div className='task-txt' onClick={()=> handleTaskClick(task.id)}>
                 {task.title}                
             </div>

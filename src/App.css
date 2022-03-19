@@ -1,11 +1,14 @@
-:root {
-    --black:#07070a;
-    --gray-ligth:#4a525a;
-    --dark-gray:#24272b;
-    --dark-blue:#004ba8;
-    --blue:#3e78b2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--black);
+  background: #021526;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
